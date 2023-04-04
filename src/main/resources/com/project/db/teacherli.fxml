@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #111827;" stylesheets="@manger.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.db.Teacherpage">
+    <children>
+        <AnchorPane layoutX="7.0" layoutY="14.0" prefHeight="48.0" prefWidth="986.0" styleClass="navbar" stylesheets="@tea.css">
+            <children>
+                <Label layoutX="880.0" layoutY="12.0" prefHeight="25.0" prefWidth="92.0" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="teacherb" layoutX="466.0" layoutY="-1.0" mnemonicParsing="false" onAction="#changePage" onMouseClicked="#nacolor" prefHeight="48.0" prefWidth="140.0" styleClass="navbutton" stylesheets="@tea.css" text="Tasks" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tasks-icon-30.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+                </Button>
+                <Button fx:id="studentb" layoutX="326.0" layoutY="-1.0" mnemonicParsing="false" onAction="#changePage" onMouseClicked="#nacolor" prefHeight="48.0" prefWidth="140.0" styleClass="navbutton" stylesheets="@tea.css" text="Student" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+               <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@user.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                        </ImageView>
+               </graphic>
+                </Button>
+                <Button fx:id="homeb" layoutX="180.0" layoutY="-1.0" mnemonicParsing="false" onAction="#changePage" onMouseClicked="#nacolor" prefHeight="48.0" prefWidth="140.0" styleClass="navbutton" stylesheets="@tea.css" text="Home" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@home.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label layoutX="29.0" layoutY="8.0" prefHeight="30.0" prefWidth="140.0" text="CodeAcademi" textFill="WHITE">
+                    <font>
+                        <Font name="Berlin Sans FB" size="23.0" />
+                    </font>
+                </Label>
+            <Button fx:id="pirsonalb" layoutX="776.0" layoutY="-1.0" mnemonicParsing="false" onAction="#pirs" onMouseClicked="#nacolor" prefHeight="48.0" prefWidth="70.0" styleClass="navbutton" stylesheets="@tea.css" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-test-account-30.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="rep" layoutX="776.0" layoutY="-1.0" mnemonicParsing="false" onAction="#pirs" onMouseClicked="#nacolor" prefHeight="48.0" prefWidth="70.0" styleClass="navbutton" stylesheets="@tea.css" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-test-account-30.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="thmoe" layoutX="9.0" layoutY="61.0" prefHeight="528.0" prefWidth="986.0">
+            <children>
+                <AnchorPane layoutX="59.0" layoutY="152.0" prefHeight="225.0" prefWidth="395.0" styleClass="chome" stylesheets="@tea.css">
+                    <children>
+                        <Label layoutX="84.0" layoutY="21.0" prefHeight="80.0" prefWidth="202.0" text="Student" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="52.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="99.0" prefHeight="45.0" prefWidth="140.0" text="Number of student:" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="shows" layoutX="86.0" layoutY="156.0" mnemonicParsing="false" onAction="#vt" onMouseClicked="#vt" prefHeight="48.0" prefWidth="213.0" styleClass="bb" stylesheets="@tea.css" text="Show Student" textFill="#231f20">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                  <Label fx:id="stunum" layoutX="158.0" layoutY="99.0" prefHeight="45.0" prefWidth="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="122.0" fitWidth="127.0" layoutX="362.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@student%20icon.png" />
+                    </image>
+                </ImageView>
+            <AnchorPane layoutX="552.0" layoutY="62.0" prefHeight="423.0" prefWidth="348.0" styleClass="chome" stylesheets="@tea.css">
+               <children>
+                  <Label layoutX="31.0" layoutY="124.0" text="Teacher Id:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="166.0" text="Teacher Name:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="209.0" text="Email:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="252.0" text="Age" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="293.0" text="Gander:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="334.0" text="P.languages:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="371.0" text="Salary:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tidt" layoutX="160.0" layoutY="125.0" styleClass="textfild" stylesheets="@tea.css" />
+                  <TextField fx:id="tnamet" layoutX="160.0" layoutY="167.0" styleClass="textfild" stylesheets="@tea.css" />
+                  <TextField fx:id="temailt" layoutX="160.0" layoutY="211.0" styleClass="textfild" stylesheets="@tea.css" />
+                  <TextField fx:id="taget" layoutX="160.0" layoutY="253.0" styleClass="textfild" stylesheets="@tea.css" />
+                  <TextField fx:id="tsext" layoutX="160.0" layoutY="294.0" styleClass="textfild" stylesheets="@tea.css" />
+                  <TextField fx:id="tpt" layoutX="160.0" layoutY="335.0" styleClass="textfild" stylesheets="@tea.css" />
+                  <TextField fx:id="tst" layoutX="160.0" layoutY="372.0" styleClass="textfild" stylesheets="@tea.css" />
+                  <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="139.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@users.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="90.0" layoutY="91.0" text="Personal information" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="ts" layoutX="7.0" layoutY="70.0" prefHeight="528.0" prefWidth="986.0" visible="false">
+            <children>
+                <AnchorPane layoutX="2.0" layoutY="-3.0" prefHeight="105.0" prefWidth="986.0" styleClass="navunder" stylesheets="@tea.css">
+                    <children>
+                        <Label layoutX="43.0" layoutY="17.0" prefHeight="63.0" prefWidth="186.0" text="Student" textFill="WHITE">
+                            <font>
+                                <Font name="Britannic Bold" size="52.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <TableView fx:id="stutab" layoutX="103.0" layoutY="153.0" prefHeight="405.0" prefWidth="802.0">
+                    <columns>
+                        <TableColumn fx:id="ids" prefWidth="75.0" text="Id" />
+                        <TableColumn fx:id="fnames" prefWidth="95.0" text="Fname" />
+                        <TableColumn fx:id="lnames" minWidth="0.0" prefWidth="120.0" text="Lname" />
+                        <TableColumn fx:id="emails" minWidth="0.0" prefWidth="172.0" text="Email" />
+                        <TableColumn fx:id="bdates" minWidth="0.0" prefWidth="110.0" text="Age" />
+                        <TableColumn fx:id="pls" minWidth="0.0" prefWidth="159.0" text="pro languge" />
+                        <TableColumn fx:id="ganders" minWidth="0.0" prefWidth="84.0" text="Gander" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="ttexhr" layoutX="7.0" layoutY="69.0" prefHeight="528.0" prefWidth="986.0" visible="false">
+            <children>
+                <AnchorPane layoutX="2.0" layoutY="-3.0" prefHeight="105.0" prefWidth="986.0" styleClass="navunder" stylesheets="@tea.css">
+                    <children>
+                        <Label layoutX="43.0" layoutY="17.0" prefHeight="63.0" prefWidth="186.0" text="Tasks" textFill="WHITE">
+                            <font>
+                                <Font name="Britannic Bold" size="52.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <TableView fx:id="tasktable" layoutX="179.0" layoutY="177.0" prefHeight="405.0" prefWidth="631.0">
+                    <columns>
+                        <TableColumn fx:id="idte" prefWidth="69.0" text="T.NO" />
+                        <TableColumn fx:id="TASKTITLE" prefWidth="140.0" text="Task Title" />
+                        <TableColumn fx:id="Dtask" prefWidth="299.0" text="Description of the task" />
+                        <TableColumn fx:id="Sympolle" prefWidth="128.0" text="sympol" />
+                    </columns>
+                </TableView>
+            <Button fx:id="refreshTask" layoutX="270.0" layoutY="122.0" mnemonicParsing="false" onAction="#refrshtask" prefHeight="45.0" prefWidth="56.0" styleClass="upt" stylesheets="@manger.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@refresh.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-1.0" contrast="-1.0" hue="0.58" saturation="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Taskadd" layoutX="198.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#addtsk" prefHeight="45.0" prefWidth="56.0" styleClass="adbt" stylesheets="@manger.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-add-properies-50.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-1.0" contrast="-1.0" hue="0.58" saturation="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Button layoutX="969.0" layoutY="2.0" mnemonicParsing="false" onAction="#ext" prefHeight="14.0" prefWidth="30.0" styleClass="ex" stylesheets="@tea.css" text="x" textFill="WHITE" />
+      <AnchorPane fx:id="pirsan" layoutX="756.0" layoutY="61.0" prefHeight="112.0" prefWidth="121.0" styleClass="pirsonl" stylesheets="@manger.css" visible="false">
+         <children>
+                <Button fx:id="logout" layoutX="1.0" layoutY="57.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="120.0" styleClass="navbutton" stylesheets="@tea.css" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+                </Button>
+                  <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="17.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@exit.png" />
+                      </image>
+                      <effect>
+                          <ColorAdjust brightness="1.0" />
+                      </effect>
+                  </ImageView>
+            <Button fx:id="logout1" layoutX="1.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="120.0" styleClass="navbutton" stylesheets="@tea.css" text="settings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="17.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-settings-50%20(1).png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

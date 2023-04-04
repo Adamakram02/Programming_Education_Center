@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="535.0" prefWidth="400.0" style="-fx-background-color: #1d2432;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.db.AddStudentController">
+   <children>
+      <TextField fx:id="ssnsty" layoutX="202.0" layoutY="96.0" prefHeight="25.0" prefWidth="159.0" styleClass="textfild" stylesheets="@addst.css" />
+      <AnchorPane prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #39424e;">
+         <children>
+            <Label layoutX="106.0" layoutY="16.0" text="Add Student" textFill="WHITE">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="37.0" layoutY="94.0" text="SSN Student" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fnamestu" layoutX="202.0" layoutY="137.0" prefHeight="25.0" prefWidth="159.0" styleClass="textfild" stylesheets="@addst.css" />
+      <Label layoutX="38.0" layoutY="136.0" text="First Name" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="214.0" text="Age" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailstu" layoutX="202.0" layoutY="257.0" prefHeight="25.0" prefWidth="159.0" styleClass="textfild" stylesheets="@addst.css" />
+      <Label layoutX="38.0" layoutY="256.0" text="Email" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ganderstu" layoutX="200.0" layoutY="297.0" prefHeight="25.0" prefWidth="159.0" promptText="Choose!.." styleClass="textfild" stylesheets="@addst.css">
+         <effect>
+            <MotionBlur angle="351.53" radius="0.0" />
+         </effect></ComboBox>
+      <Label layoutX="39.0" layoutY="296.0" text="Gander" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="340.0" text="Password" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passstu" layoutX="200.0" layoutY="341.0" prefHeight="25.0" prefWidth="159.0" styleClass="textfild" stylesheets="@addst.css" />
+      <ComboBox fx:id="prstu" layoutX="201.0" layoutY="383.0" prefHeight="25.0" prefWidth="159.0" promptText="chose" stylesheets="@addst.css">
+         <styleClass>
+            <String fx:value="comp" />
+            <String fx:value="textfild" />
+         </styleClass></ComboBox>
+      <Label layoutX="40.0" layoutY="382.0" text="Pro language" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="66.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="34.0" prefWidth="94.0" styleClass="bu" stylesheets="@addst.css" text="Add">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="224.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#clean" prefHeight="34.0" prefWidth="94.0" styleClass="bu" stylesheets="@addst.css" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="lnamestu" layoutX="202.0" layoutY="175.0" prefHeight="25.0" prefWidth="159.0" styleClass="textfild" stylesheets="@addst.css" />
+      <Label layoutX="38.0" layoutY="174.0" text="Last Name" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="berstu" layoutX="202.0" layoutY="215.0" prefHeight="25.0" prefWidth="159.0" styleClass="textfild" stylesheets="@addst.css" />
+   </children>
+</AnchorPane>

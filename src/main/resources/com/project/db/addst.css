@@ -1,0 +1,37 @@
+.textfild{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: #fff;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px 0px 0.2px 0px;
+    -fx-text-inner-color:#fff;
+
+}
+.comp.cell{
+
+
+    -fx-text-fill:#fff;
+    -fx-font: 16px "Arial";
+}
+
+.bu{
+    -fx-background-color: #32c766;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.bu:hover{
+    -fx-background-color: #8aacf0;
+}
+.ex{
+    -fx-background-color: #c22c40;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.ex:hover{
+    -fx-background-color: #f15b72;
+}
+.date-picker .text-field {
+    -fx-control-inner-background: #1d2432 ;
+    -fx-border-color: #39424e;
+    -fx-text-inner-color:#fff;
+}

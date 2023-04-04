@@ -1,0 +1,36 @@
+.vbox_background_center{
+    -fx-background-image:url("256x256bb.jpg")
+}
+.vbox_background_right{
+    -fx-background-image:url("bo.png")
+}
+.cursor_hand{
+    -fx-cursor: hand
+}
+.Login_button{
+    -fx-background-color:  #32c766;
+}
+.Login_button:hover{
+    -fx-background-color:  #8aacf0;
+}
+.nocolor{
+    -fx-background-color: #39424e;
+    -fx-background-radius: 20px;
+
+}
+.te{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px 0.2px 0px;
+    -fx-border-radius: 10px;
+    -fx-text-inner-color:#fff;
+}
+.but{
+    -fx-background-color: #32c766;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+.but:hover{
+    -fx-background-color: #8aacf0;
+}

@@ -1,0 +1,109 @@
+.navbar{
+    -fx-background-color: #39424e;
+}
+.navbutton{
+    -fx-background-color: #39424e;
+}
+.navbutton:hover{
+    -fx-background-color: #444b56;
+}
+.navunder{
+    -fx-background-color: #1d2432;
+}
+.adbt{
+    -fx-border-radius: 150px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color:  #08ff6b;
+
+}
+
+.adbt:hover{
+    -fx-background-color: #8aacf0;
+}
+
+.upt{
+    -fx-border-radius: 150px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #288bb6;
+}
+.upt:hover{
+    -fx-background-color: #a6b4de;
+}
+.table-view {
+    -fx-background-color:#444b56;
+    -fx-background-radius:14 14 0 0;
+
+}
+.table-view .column-header-background{
+    -fx-background-color: #444b56;
+    -fx-background-radius:10;
+    -fx-background-insets: 0 0 10 0;
+
+
+
+}
+.table-view .column-header, .table-view .filler{
+    -fx-size:50px;
+    -fx-border-width: 0 0 10 0;
+    -fx-background-color:transparent;
+
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+}
+
+.chome{
+    -fx-background-color: #39424e;
+    -fx-background-radius: 20px;
+}
+.bb{
+    -fx-background-color:  #32c766;
+    -fx-background-radius:  20px;
+}
+
+.bb:hover{
+
+    -fx-background-color:  #08ff6b;
+    -fx-background-radius:  20px;
+
+}
+.textfild{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: #fff;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px 0px 0.2px 0px;
+    -fx-text-inner-color:#fff;
+
+}
+.comp.cell{
+
+
+    -fx-text-fill:#fff;
+    -fx-font: 16px "Arial";
+}
+
+.bu{
+    -fx-background-color: #32c766;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.bu:hover{
+    -fx-background-color: #8aacf0;
+}
+.ex{
+    -fx-background-color: #c22c40;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.ex:hover{
+    -fx-background-color: #f15b72;
+}
+.date-picker .text-field {
+    -fx-control-inner-background: #1d2432 ;
+    -fx-border-color: #39424e;
+    -fx-text-inner-color:#fff;
+}

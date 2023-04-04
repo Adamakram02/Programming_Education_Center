@@ -1,0 +1,8 @@
+.txt{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: #fff;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px 0px 0.2px 0px;
+    -fx-text-inner-color:#fff;
+}
