@@ -24,4 +24,5 @@ He can also see the tasks set by the teacher and complete them via a button that
 # Steps to install Programming_Education_Center on your system
 + Download Programming_Education_Center repository
 + Open Anaconda terminal and ```cd``` to the location where Programming_Education_Center is downloaded
++ Open dp file in mysql.
 
